@@ -6,3 +6,8 @@ spec:
   instances: 2
   storage:
     size: 1Gi
+  backup:
+    volume:
+      persistentVolumeClaim:
+        claimName: cnpg-backup-storage
+    retentionPolicy: "30d"
